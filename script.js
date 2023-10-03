@@ -26,7 +26,7 @@ function updateData(){
     myObject.forEach(element => {
         levelOne.innerHTML += `<li> Score Property: ${element.score}</li>`
     });
-    levelOne.innerHTML += `</ul>`;
+    levelOne.innerHTML += `</ul><br>`;
 
     // new div for level Two
     let divLevelTwo = document.createElement("div");
@@ -39,7 +39,7 @@ function updateData(){
     myObject.forEach(element => {
         levelTwo.innerHTML += `<li>Show id Property: ${element.show.id}</li>`;
     });
-    levelTwo.innerHTML += '</ul>';
+    levelTwo.innerHTML += '</ul><br>';
 
     // new div for level Three
     let divLevelThree = document.createElement("div");
@@ -53,7 +53,7 @@ function updateData(){
         // Getting genres
         levelThree.innerHTML += `<li> Generes Property: ${element.show.genres}</li>`;
     });
-    levelThree.innerHTML += `</ul>`;
+    levelThree.innerHTML += `</ul><br>`;
 
     // new div for level Four
     let divLevelFour = document.createElement("div");
@@ -71,7 +71,7 @@ function updateData(){
             levelFour.innerHTML += `<li> imdb Property: Not Available</li>`;
         }
     });
-    levelFour.innerHTML += `</ul>`;
+    levelFour.innerHTML += `</ul><br>`;
 
     // new div for level Five
     let divLevelFive = document.createElement('div');
@@ -89,5 +89,5 @@ function updateData(){
             levelFive.innerHTML += `<li> Country Names Property: Not Available</li>`;
         }
     });
-    levelFive.innerHTML += `</ul>`
+    levelFive.innerHTML += `</ul><br>`
 }
